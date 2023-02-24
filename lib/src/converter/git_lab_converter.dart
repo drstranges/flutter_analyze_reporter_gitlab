@@ -18,7 +18,7 @@ class GitLabConverter extends Converter {
       final type = _severity(element.type);
       gitlabIssues.add(
         GitLabIssue(
-          type: type,
+          type: "issue",
           severity: type,
           checkName: element.checkName,
           description: element.description,
